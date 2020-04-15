@@ -5,3 +5,4 @@
       package:
         name: "{{ morpheus.customOptions.packageName }}"
         state: latest
+      when: morpheus.customOptions.packageName is defined
