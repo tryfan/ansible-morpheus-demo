@@ -3,6 +3,6 @@
   tasks:
     - name: Install package
       package:
-        name: "{{ morpheus.customOptions.packageName }}"
+        name: "{{ morpheus['customOptions']['packageName'] }}"
         state: latest
-      when: morpheus.customOptions.packageName is defined
+      when: morpheus['customOptions']['packageName'] is defined
