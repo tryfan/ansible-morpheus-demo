@@ -1,0 +1,7 @@
+- hosts: all
+  gather_facts: true
+  tasks:
+    - name: Install package
+      package:
+        name: "{{ morpheus.customOptions.packageName }}"
+        state: latest
